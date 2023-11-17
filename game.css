@@ -1,0 +1,205 @@
+body {
+    background-image: url(background3.jpg);
+    background-size: contain;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 0fr);
+    grid-gap: 0%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    background-color: #ffdcb4;
+    border: 1px solid black ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cell.endCell {
+    border-right: 8px solid #2e4a00;
+}
+
+.cell.selected, .cell.cell.selected:hover {
+    background-color: #3f0064; /* Kijelölt elemek más színt kapnak */
+    color: #fff; /* Szövegfehér színűvé válik */
+}
+
+.ownFigure:hover, .obstacle1:hover, .obstacle2:hover, .obstacle3:hover, .obstacle4:hover, .obstacle5:hover, .obstacle6:hover, .obstacle7:hover, .obstacle8:hover, .obstacle9:hover, .obstacle10:hover, .obstacle11:hover, .obstacle12:hover {
+    background-color: rgb(118, 73, 156);
+    color: #fff;
+    cursor: pointer;
+}
+
+.ownFigure {
+    background-color: #2e4a00;
+}
+
+.obstacle1 {
+    background-color: #BC8F8F;
+}
+
+.obstacle2 {
+    background-color: #DAA520;
+}
+
+.obstacle3 {
+    background-color: #8B4513;
+}
+
+.obstacle4 {
+    background-color: #C04000;
+}
+
+.obstacle5 {
+    background-color: #FF4500;
+}
+
+.obstacle6 {
+    background-color: #8B0000;
+}
+
+.obstacle7 {
+    background-color: #ae3d3d;
+}
+
+.obstacle8 {
+    background-color: #6a3a17;
+}
+
+.obstacle9 {
+    background-color: #FF6600;
+}
+
+.obstacle10 {
+    background-color: #CD5C5C;
+}
+
+.obstacle11 {
+    background-color: #D2691E;
+}
+
+.obstacle12 {
+    background-color: #B7410E;
+}
+
+.obstacle13 {
+    background-color: #814830;
+}
+
+.message {
+    grid-column: span 6;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffb727;
+    color: #e74337;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 10px;
+    max-width: 359px;
+    height: 38px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 6px;
+}
+
+/*.restartButton, .nextLevelButton {
+    grid-column: span 6;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffea75;
+    color: #FF1493;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    max-width: fit-content;
+    margin-left: 200px;
+}
+
+.restartButton:hover, .nextLevelButton:hover {
+    background-color: #c0392b;
+}
+*/
+
+.nextLevelButton {
+    position: absolute;
+    left: 876px;
+    top: 550px;
+    width: 79px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 65px; /* Állítsd be a kép magasságát a megfelelő méretre */
+    cursor: pointer;
+}
+
+
+
+/* A módosított gomb stílusa */
+.mainMenuButton {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 100px; /* Állítsd be a kép magasságát a megfelelő méretre */
+    cursor: pointer;
+    z-index: 2; /* A gomb a pálya fölé kerül */
+}
+
+.resetButton {
+    position: absolute;
+    left: 117px;
+    top: 27px;
+    width: 70px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 70px; /* Állítsd be a kép magasságát a megfelelő méretre */
+    cursor: pointer;
+    z-index: 2; /* A gomb a pálya fölé kerül */
+}
+
+.startIG {
+    position: absolute;
+    left: 430px;
+    top: 285px;
+    width: 50px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 50px;
+}
+
+.finishIG {
+    position: absolute;
+    left: 960px;
+    top: 285px;
+    width: 50px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 50px;
+}
+
+.startGE {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 70px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 70px;
+}
+
+.finishGE {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 70px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    height: 70px;
+}
