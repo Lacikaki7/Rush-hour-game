@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #87CEFA, #c0f8ff);
+}
+
+.container {
+    width: 600px; /* Változtathatod a kívánt szélességre */
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+}
+
+.form-group{
+    margin-bottom:30px;
+}

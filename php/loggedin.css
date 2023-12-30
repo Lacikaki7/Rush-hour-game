@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(indexbg2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.menu {
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+}
+
+menu a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #892222;
+    margin-left: 36px;
+    margin-bottom: 0%;
+}
+
+ul.button-container {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+li {
+    margin: 0px 20px 6px 40px;
+}
+
+.button-container a {
+    display: block;
+    padding: 10px;
+    color: #892222;
+    background-color: #cc874a;
+    text-decoration: none;
+    border-radius: 5px;
+    border: black 2px solid;
+    transition: background-color 0.3s;
+    font-size: 25px;
+    width: 300px;
+    font-weight: bold;
+}
+
+.button-container a:hover {
+    background-color: #b26b3c;
+}
+
+.info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #892222;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background-color: #cc874a;
+    color: #892222;
+    padding: 5px;
+    border-radius: 5px;
+    border: black 2px solid;
+    width: 400px;
+    font-size: 13px;
+}
+
+.description li {
+    margin: 0;
+}
+
+.info:hover .description {
+    display: block;
+}
+
+.logoutBtn {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 45px;
+}
+
+.logoutBtn img {
+    width: 31px;
+}
+
+.loggedInUser {
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #892222;
+    font-size: 40px;
+}
