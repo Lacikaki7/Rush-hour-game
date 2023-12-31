@@ -68,15 +68,14 @@ if (level === 'level_2.html') {
     ];
 }
 
-let timer = 0; // in seconds
+let timer = 0;
 let timerInterval;
 
 function startTimer() {
     timerInterval = setInterval(() => {
         timer++;
-        // Update the displayed timer on the game board
         updateTimerDisplay();
-    }, 1000); // Update every 1 second
+    }, 1000);
 }
 
 function stopTimer() {
@@ -239,7 +238,7 @@ function moveElement(direction) {
         const canMove = canElementMove(obstacle, direction);
         if (canMove) {
             isMoving = true;
-            stepCount++; // Increment the step counter
+            stepCount++;
             updateStepCounter();
             if (direction === 'right') {
                 if (obstacle.x === ownFigurePosition.x && obstacle.y === ownFigurePosition.y) {
@@ -386,9 +385,6 @@ function checkWinCondition() {
 }
 
 function insertGameData(level, steps, completionTime) {
-    // You need to make an AJAX request or use another method to send data to the server.
-    // In the server-side PHP code, you will insert this data into the database.
-    // Example AJAX request:
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "saveGameData.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
