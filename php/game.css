@@ -13,7 +13,6 @@ body {
 
 #game-container {
     position: relative;
-    /* Add other styling properties as needed */
 }
 
 #timer-display {
@@ -30,7 +29,7 @@ body {
 
 #step-counter {
     position: absolute;
-    top: 30px; /* Adjust the top distance as needed */
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: inherit;
@@ -69,8 +68,8 @@ body {
 }
 
 .cell.selected, .cell.cell.selected:hover {
-    background-color: #3f0064; /* Kijelölt elemek más színt kapnak */
-    color: #fff; /* Szövegfehér színűvé válik */
+    background-color: #3f0064;
+    color: #fff;
 }
 
 .ownFigure:hover, .obstacle1:hover, .obstacle2:hover, .obstacle3:hover, .obstacle4:hover, .obstacle5:hover, .obstacle6:hover, .obstacle7:hover, .obstacle8:hover, .obstacle9:hover, .obstacle10:hover, .obstacle11:hover, .obstacle12:hover {
@@ -173,39 +172,36 @@ body {
     position: absolute;
     left: 879px;
     top: 527px;
-    width: 79px; /* Állítsd be a kép szélességét a megfelelő méretre */
-    height: 65px; /* Állítsd be a kép magasságát a megfelelő méretre */
+    width: 79px;
+    height: 65px; 
     cursor: pointer;
 }
 
-
-
-/* A módosított gomb stílusa */
 .mainMenuButton {
     position: absolute;
     left: 10px;
     top: 10px;
-    width: 100px; /* Állítsd be a kép szélességét a megfelelő méretre */
-    height: 100px; /* Állítsd be a kép magasságát a megfelelő méretre */
+    width: 100px;
+    height: 100px;
     cursor: pointer;
-    z-index: 2; /* A gomb a pálya fölé kerül */
+    z-index: 2;
 }
 
 .resetButton {
     position: absolute;
     left: 117px;
     top: 27px;
-    width: 70px; /* Állítsd be a kép szélességét a megfelelő méretre */
-    height: 70px; /* Állítsd be a kép magasságát a megfelelő méretre */
+    width: 70px;
+    height: 70px;
     cursor: pointer;
-    z-index: 2; /* A gomb a pálya fölé kerül */
+    z-index: 2;
 }
 
 .startIG {
     position: absolute;
     left: 430px;
     top: 285px;
-    width: 50px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    width: 50px;
     height: 50px;
 }
 
@@ -213,7 +209,7 @@ body {
     position: absolute;
     left: 960px;
     top: 285px;
-    width: 50px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    width: 50px;
     height: 50px;
 }
 
@@ -221,7 +217,7 @@ body {
     position: absolute;
     left: 200px;
     top: 200px;
-    width: 70px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    width: 70px;
     height: 70px;
 }
 
@@ -229,6 +225,6 @@ body {
     position: absolute;
     left: 200px;
     top: 200px;
-    width: 70px; /* Állítsd be a kép szélességét a megfelelő méretre */
+    width: 70px;
     height: 70px;
 }
