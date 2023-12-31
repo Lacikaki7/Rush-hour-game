@@ -7,15 +7,13 @@ if (!isset($_SESSION["user"])) {
 
 require_once "database.php";
 
-// Fetch the user ID based on the session
 $userFullName = $_SESSION["user"];
 $sqlUserId = "SELECT id FROM users WHERE full_name = '$userFullName'";
 $resultUserId = mysqli_query($conn, $sqlUserId);
 $user = mysqli_fetch_assoc($resultUserId);
 $userId = $user["id"];
 
-// Fetch the scoreboard data for the selected level
-$level = isset($_GET['level']) ? $_GET['level'] : 'level_1.html';  // Default to level 1 if no level is selected
+$level = isset($_GET['level']) ? $_GET['level'] : 'level_1.html';
 $activeLevel = str_replace('.html', '', $level);
 $sqlScoreboard = "SELECT DISTINCT full_name, steps, completion_time
                   FROM user_game_data
